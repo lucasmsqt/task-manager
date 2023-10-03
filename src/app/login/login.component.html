@@ -1,0 +1,17 @@
+    <h1 class="title">TASK-MANAGER</h1>
+    <div class="login-container">
+        <h1 class="login-ctn-title">Login</h1>
+            <p>Email</p>
+        <div class="input-container">
+                <img class="user-icon" src="/assets/images/user-icon.png" alt="">
+                    <input type="email" [(ngModel)]="email" placeholder="Insira seu Email" required>
+        </div>
+            <p>Password</p>
+            <div class="input-container">
+                <img class="password-icon" src="/assets/images/password-icon.png" alt="">
+                <input type="password" [(ngModel)]="password" placeholder="Insira sua senha" required>
+            </div>
+                <p>Forgot Password?</p>
+        <button (click)="login()">Login</button>
+            <p>Sign Up</p>
+    </div>
