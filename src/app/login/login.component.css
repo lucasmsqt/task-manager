@@ -1,6 +1,6 @@
 :host {
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     align-items: center;
     text-align: center;
     width: 100vw;
@@ -13,27 +13,72 @@
     color: white;
     font-size: 50px;
 }
-.login-ctn-title{
+
+.login-ctn-title {
     margin-top: 1rem;
 }
 
 .login-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: white;
     margin-top: 4rem;
-    height: 20rem;
+    height: 23rem;
     width: 20rem;
     border-radius: 20px;
 }
 
 
-.login-container p {
+.input-container p {
     font-weight: bold;
     text-align: left;
-    padding-left: 1rem;
 }
 
-.input-container input{
-    width: 17rem;
+.input-container input {
+    width: 15rem;
+    border: 0;
+    outline: none;
+}
+
+.user-icon,
+.password-icon {
+    transform: translate(-10px, 5px);
+}
+
+hr {
+    border-color: black;
+    border: 0;
+    border-bottom: solid 1px;
+    width: 17.8rem;
+    margin-top: 0.6rem;
+}
+
+.lgn-button {
+    width: 8rem;
+    border: 0;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    margin-top: 2rem;
+    height: 2.5rem;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.lgn-button:hover {
+    background-color: #1C1C1C;
+}
+
+.forgot-password:hover, .sign-up:hover {
+    text-decoration: underline;
+}
+
+
+@media (min-width: 375px) {
+      .title {
+        font-size: 42px;
+      }
 }

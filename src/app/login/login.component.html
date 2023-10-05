@@ -1,17 +1,19 @@
     <h1 class="title">TASK-MANAGER</h1>
     <div class="login-container">
         <h1 class="login-ctn-title">Login</h1>
+        <div class="input-container mt-6">
             <p>Email</p>
-        <div class="input-container">
                 <img class="user-icon" src="/assets/images/user-icon.png" alt="">
                     <input type="email" [(ngModel)]="email" placeholder="Insira seu Email" required>
+                    <hr>
         </div>
-            <p>Password</p>
-            <div class="input-container">
+        <div class="input-container mt-4">
+                <p>Password</p>
                 <img class="password-icon" src="/assets/images/password-icon.png" alt="">
                 <input type="password" [(ngModel)]="password" placeholder="Insira sua senha" required>
+                <hr>
             </div>
-                <p>Forgot Password?</p>
-        <button (click)="login()">Login</button>
-            <p>Sign Up</p>
+                <a href="" class="forgot-password text-[12px] mt-2 ml-[11.8rem] text-black">Forgot Password?</a>
+        <button class="lgn-button" (click)="login()">Login</button>
+            <a href="" class="sign-up mt-[2.5rem] font-bold text-black">Sign Up</a>
     </div>
